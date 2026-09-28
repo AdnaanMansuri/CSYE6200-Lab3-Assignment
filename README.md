@@ -1,24 +1,50 @@
 # CSYE 6200 - Lab 3: Continuation of Java Swing
 
-A Java Swing user profile form built in NetBeans, using a `user` model class.
+A Java Swing user profile form developed using **Java 21** and **NetBeans**. The application allows users to enter their personal information, validate the data, upload a photo, and display the submitted profile.
 
 ## Features
-- `model.user` class with getters, setters and a `toString()` method
-- Fields: First Name, Last Name, Age, Gender (combo box), Phone, Email, Continent, Hobbies (text area) and Photo
-- Validation for name, phone and email
-- Photo upload with preview
-- Success popup showing the entered details and photo
+
+- User profile form using Java Swing
+- `model.user` class with:
+  - Getters
+  - Setters
+  - `toString()` method
+- User input fields:
+  - First Name
+  - Last Name
+  - Age
+  - Gender
+  - Phone
+  - Email
+  - Continent
+  - Hobbies
+  - Photo
+- Gender selection using a Combo Box
+- Input validation for:
+  - Name
+  - Phone
+  - Email
+- Photo upload functionality
+- Photo preview
+- Success popup displaying the entered information
+- Maven-based Java project
 
 ## Project Structure
-```
-src/main/java/
-├── model/user.java
-└── ui/MainJFrame.java
-Screenshots/
-```
 
-## How to Run
-Open the project in NetBeans and run `ui.MainJFrame` (Java 21, Maven).
-
-## Screenshots
-See the `Screenshots` folder.
+```text
+Test/
+├── src/
+│   └── main/
+│       └── java/
+│           ├── model/
+│           │   └── user.java
+│           │
+│           └── ui/
+│               └── MainJFrame.java
+│
+├── Screenshots/
+│   ├── form.png
+│   └── success.png
+│
+├── pom.xml
+└── README.md
